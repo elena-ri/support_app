@@ -58,12 +58,13 @@ const graphData = {
     "D1": "<h3>Haushalt</h3>Ich könnte zum Beispiel:",
     "D11": "Zum BeispieL:<ul><li>den Abwasch erledigen, Spülmaschine aus- und einräumen</li><li>Müll wegräumen</li><li>eine besonders schmutzige Ecke putzen</li><li>das Bett frisch beziehen</li><li>Dinge aufräumen</li><li>Dinge ausmisten</li></ul>",
     "D12": "Evtl. auch zusätzlich mit dir zusammen eine Einkaufsliste erstellen",
-    "D2": "<h3>Ernährung</h3>Ich könnte zum Beispiel:<ul><li>Essensplanung für die kommenden Tage mit dir machen oder für dich machen</li><li>Essen kochen (für jetzt oder Mahlzeiten vorbereiten/vorkochen</li><li>den Kühlschrank/Vorratsschrank durchsortieren, verdorbenes entsorgen</li><li>Rezepte heraussuchen (ggf. mit Rücksicht auf bestimmte Ernährungsbedürfnisse)</li><li></li></ul>",
-    "D3": "Zum Beispiel:<ul><li>duschen oder baden</li><li>Haare waschen</li><li>Zähne putzen</li><li>Finger- oder Fußnägel schneiden</li><li>Gesichtshaar pflegen (z.B. Bart stutzen oder rasieren, Nasenhaare kürzen, ...)</li><li>Körperhaar pflegen</li></ul>",
-    "D8": "Zum Beispiel:<ul><li>eine Wunde/Verletzung versorgen</li><li>an Medikamenteneinnahme erinnern</li><li>Gesundheits-/Bewusstseinszustand überwachen (z.B. nach einer Kopfverletzung, nach Medikamenteneinnahme)</li><li>einen Arzttermin ausmachen oder kurzfristige medizinische Hilfe organisieren (zum ärztlicher Bereitschaftsdienst oder zur Notaufnahme fahren, Rettungsdienst anrufen</li><li>zu einem Arzttermin begleiten (bis vor die Eingangstür, bis ins Wartezimmer, bei Gesprächen und Untersuchungen dabei sein</li></ul>",
+    "D2": "<h3>Ernährung</h3>Ich könnte zum Beispiel:<ul><li>Essensplanung für die kommenden Tage mit dir machen oder für dich machen</li><li>Essen kochen (für jetzt oder Mahlzeiten vorbereiten/vorkochen)</li><li>den Kühlschrank/Vorratsschrank durchsortieren, verdorbenes entsorgen</li><li>Rezepte heraussuchen (ggf. mit Rücksicht auf bestimmte Ernährungsbedürfnisse)</li></ul>",
+    "D3": "Zum Beispiel:<ul><li>duschen oder baden</li><li>Haare waschen</li><li>Zähne putzen</li><li>Finger- oder Fußnägel schneiden</li><li>Gesichtshaar pflegen (z.B. Bart stutzen oder rasieren, ...)</li><li>Körperhaar pflegen (z.B. Beine</li></ul>",
+    "D8": "Zum Beispiel:<ul><li>eine Wunde/Verletzung versorgen</li><li>an Medikamenteneinnahme erinnern</li><li>Gesundheits-/Bewusstseinszustand überwachen (z.B. nach einer Kopfverletzung, nach Medikamenteneinnahme)</li><li>einen Arzttermin ausmachen oder kurzfristige medizinische Hilfe organisieren (zum ärztlicher Bereitschaftsdienst oder zur Notaufnahme fahren, Rettungsdienst anrufen)</li><li>zu einem Arzttermin begleiten (bis vor die Eingangstür, bis ins Wartezimmer, bei Gesprächen und Untersuchungen dabei sein</li></ul>",
     "D4": "Zum Beispiel:<ul><li>irgendwo anrufen, ein Telefongespräch führen</li><li>eine Nachricht formulieren/verschicken (Messenger, Mail, Brief)</li><li>eine Nachricht lesen</li><li>in echt mit jemandem sprechen</li></ul>",
     "D5": "Zum Beispiel:<ul><li>einen Antrag stellen</li><li>einen Termin vereinbaren</li><li>zu einem Termin gehen</li></ul>",
     "D6": "D6",
+    "D13": "Ich könnte zum Beispiel:<ul><li>dabei sein</li><ul>davor, währenddessen, danach</li></ul><li>über diese Wege:</li><ul>schreiben, Telefon, Video, persönlich</ul></ul>",
     "F": "<h3>Geistige Unterstützung</h3> Das bedeutet, jemanden mit der eigenen geistigen Kapazität zu unterstützen. Es kann entweder darum gehen, dass die Person ein Problem hat, das allein in ihrer Verantwortung liegt und wo du unterstützend dabei sein kannst. Es kann aber auch sein, dass es ein Problem gibt, was euch beide betrifft, wo es notwendig sein kann, die Last gleichmäßiger zu verteilen.",
     "F1": "Zum Beispiel:<ul><li>Kannst du mir sagen, ob ich dieses Kleidungsstück zur Hochzeit meiner Kollegin anziehen kann?</li><li>Würdest du mir sagen, wie du die Situation mit Stef vorhin wahrgenommen hast? Hab ich mich irgendwie unpassend verhalten?</li></ul>",
     "F2": "Zum Beispiel:<ul><li>dabei helfen, zu identifizieren, was gerade das größte Problem/der größte Stresspunkt für dich ist</li><li>dabei helfen, Lösungswege für ein Problem zu finden; über Lösungswege nachdenken</li><li>Prioritäten setzen, auswählen, was gerade das wichtigste ist</li><li>Ziele formulieren</li><li>dabei helfen zu einer Entscheidung zu gelanden, verschiedene Optionen abwägen und bewerten</li><li>einen Plan machen, wie man vorgehen kann, um ein bestimmtes Ziel zu erreichen</li><li>Informationen recherchieren</li><li>Informationen aufbereiten, z.B. etwas zusammenfassen</li></ul>",
@@ -100,7 +101,7 @@ const graphData = {
     "E23211": "Weißt du, was ihr Freude macht? Was sie meistens zum Lachen oder zum Strahlen bringt? Was findet sie wirklich schön und besonders?",
     "E23212": "",
     "E23213": "Zum Beispiel:<ul><li>ggf. vorhandene Selbstkritik abmildern</li><li>bestimmte Eigenschaften oder Verhaltensweisen anerkennen</li><li>Leistungen anerkennen, Stolz ausdrücken</li></ul>",
-    "E2322": "Welche Gefühle erlebt die Person im Moment am stärksten?<br><br>Hat sie selbst Ideen, was ihr helfen könnte, diese zu verringern? Hast du Ideen?<br><br>Zum Beispiel: <ul><li>der Person Raum geben Dampf ablassen, ihre Wut rauslassen</li><li>eine sichere und ruhige Atmosphäre schaffen in der jemand weinen zu können</li></ul>",
+    "E2322": "Welche Gefühle erlebt die Person im Moment am stärksten?<br><br>Hat sie selbst Ideen, was ihr helfen könnte, diese zu verringern? Hast du Ideen?<br><br>Zum Beispiel: <ul><li>der Person Raum geben Dampf ablassen, ihre Wut rauslassen</li><li>eine sichere und ruhige Atmosphäre schaffen in der jemand weinen kann</li></ul>",
     "E231": "Würde es der Person helfen, wenn sie etwas zur Ruhe kommen könnte? Oder würde es ihr eher helfen, wenn sie sich wacher und energiegeladener fühlen könnte?",
     "E2311": "Hat sie selbst Ideen, was ihr helfen könnte, diese zu verringern? Hast du Ideen?<br><br>Zum Beispiel:<ul><li>ruhige Musik anmachen</li><li>eine Entspannungsübung anleiten</li></ul>",
     "E2312": "Hat sie selbst Ideen, was ihr helfen könnte, diese zu verringern? Hast du Ideen?<br><br>Zum Beispiel:<ul><li>den Kreislauf in Schwung bringen duch Bewegung (Kniebeugen, ein Spaziergang, anderer Sport...)</li></ul>",
@@ -115,10 +116,11 @@ const graphData = {
     "B": "<h3>Liebevoller Körperkontakt</h3>Was wäre hiervon gut für dich?",
     "B1": "B1",
     "B2(\"<ul><li>deine Hand halten, meine Hand auf deine Hand legen</li><li>meine Hand auf deinen Rücken oder deine Schulter legen</li><li>du könntest dich an meine Schulter lehnen</li></ul>)": "pattern of node not matched",
-    "B2": "B2",
-    "B3": "<ul><li>sanft über deine Haut streichen</li><li>im Sitzen miteinander kuscheln</li><li>im Liegen miteinander kuscheln</li></ul>",
-    "B4": "<ul><li>den Kopf kraulen</li><li>Nacken und Schulter durchkneten</li><li>den Rücken massieren</li><li>Füße kneten</li></ul>",
-    "B5": "B5",
+    "B3": "B2",
+    "B4": "<ul><li>sanft über deine Haut streichen</li><li>im Sitzen miteinander kuscheln</li><li>im Liegen miteinander kuscheln</li></ul>",
+    "B5": "<ul><li>den Kopf kraulen</li><li>Nacken und Schulter durchkneten</li><li>den Rücken massieren</li><li>Füße kneten</li></ul>",
+    "B7": "B7",
+    "B6": "B5",
     "G": "<h3>Materielle Unterstützung</h3>Benötigt die Person zeitweise oder dauerhaft etwas von den materiellen Dingen in der Liste unten?<br><br>(Wenn es eher darum geht, dass du selbst diese Gegenstände nutzt, um der Person zu helfen oder ihr dabei hilfst, sie zu bekommen, dann wäre das auch der Bereich Praktische Unterstützung von der Auswahlseite relevant.)",
     "G1": "Das könnte zum Beispiel folgendes sein:<ul><li>Werkzeuge, Geräte, Maschinen (z.B. eine Pulsuhr, eine Bohrmaschine, ein Waffeleisen ...</li><li>Transportmittel, z.B. ein Fahrrad oder Auto leihen</li><li>eine Wohnung oder einen Schlafplatz zur Verfügung stellen</li></ul>",
     "G2": "<ul><li>Geld leihen (Wie viel? Zu welchem Zeitpunkt? Wie lange?</li><li>Geld schenken (Wie viel? Zu welchem Zweck? Unter welchen Bedingungen?)</li><li>Geld direkt für etwas ausgeben, was der anderen Person hilft (z.B. einen Babysitter für zwei Stunden bezahlen)</li></ul>",
@@ -628,11 +630,11 @@ const graphData = {
     {
       "from": "D",
       "to": "D6",
-      "label": "Betreuung von Kindern oder auf andere hilfsbedürftige Menschen, die sonst in deiner Obhut sind"
+      "label": "Betreuung von Kindern oder anderer hilfsbedürftiger Menschen, die sonst in deiner Obhut sind [Link fehlt]"
     },
     {
       "from": "D",
-      "to": "D8",
+      "to": "D13",
       "label": "Begleitung rund um eine herausfordernde Angelegenheit (z.B. ein emotional aufgeladenes ToDo, ein schwieriger Termin)"
     },
     {
@@ -828,7 +830,7 @@ const graphData = {
     {
       "from": "E2",
       "to": "E22",
-      "label": "dabei helfen, die Ursachen dafür zu verstehen"
+      "label": "dabei helfen, die Auslöser und Ursachen dafür zu verstehen [Link fehlt]"
     },
     {
       "from": "E2",
@@ -838,7 +840,7 @@ const graphData = {
     {
       "from": "E23",
       "to": "E232",
-      "label": "positive Gefühle herbeiführen oder negative Gefühle verringern"
+      "label": "die Gefühlsqualität verändern (positive Gefühle herbeiführen oder negative Gefühle verringern)"
     },
     {
       "from": "E232",
@@ -852,7 +854,7 @@ const graphData = {
     },
     {
       "from": "E23211",
-      "to": "D",
+      "to": "H",
       "label": "etwas schönes miteinander unternehmen"
     },
     {
@@ -948,7 +950,7 @@ const graphData = {
     {
       "from": "B",
       "to": "B1",
-      "label": "umarmt werden"
+      "label": "umarmt werden [Link fehlt]"
     },
     {
       "from": "B",
@@ -957,23 +959,28 @@ const graphData = {
     },
     {
       "from": "B",
-      "to": "B2",
-      "label": "im Arm gehalten werden"
-    },
-    {
-      "from": "B",
       "to": "B3",
-      "label": "streicheln, kuscheln"
+      "label": "im Arm gehalten werden [Link fehlt]"
     },
     {
       "from": "B",
       "to": "B4",
-      "label": "massiert werden"
+      "label": "streicheln, kuscheln"
     },
     {
       "from": "B",
       "to": "B5",
-      "label": "Intimität, Sexualität"
+      "label": "massiert werden"
+    },
+    {
+      "from": "B",
+      "to": "B7",
+      "label": "Kuss auf die Stirn [Link fehlt]"
+    },
+    {
+      "from": "B",
+      "to": "B6",
+      "label": "Intimität, Sexualität [Link fehlt]"
     },
     {
       "from": "WAS_LEXIKON",
