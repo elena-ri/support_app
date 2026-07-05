@@ -11,7 +11,7 @@ const graphData = {
     "START_BITTE": "<h3>Um Hilfe bitten</h3>💬 Fällt es dir leicht, mich um das zu bitten, von dem du denkst, dass es dir helfen würde?",
     "START_SZ2": "Hier sind alle Schritte, die für diesen Fall notwendig sind. Ich würde empfehlen, sie nacheinander durchzugehen.",
     "START_SZ3": "Fühlst du dich dazu in der Lage, mit Hilfe dieser Anwendung alleine herauszufinden, welche Art von Hilfe du gerade brauchst?",
-    "START_SZ3_ALLEINE": "Hier sind alle Schritte, die für diesen Fall notwendig sind. Ich würde empfehlen, sie nacheinander durchzugehen.<br><br>Die Texte sind so geschrieben, dass sie sich an eine helfende Person richten. Wenn du es als hilfsbedürftige Person selbstständig durchgehst, kann an manchen Stellen ein Perspektivwechsel notwendig sein.",
+    "START_SZ3_ALLEINE": "Hier sind alle Schritte, die für diesen Fall notwendig sind. Ich würde empfehlen, sie nacheinander durchzugehen.<br><br>Die Texte sind so geschrieben, dass sie sich an eine helfende Person richten. Wenn du es als hilfsbedürftige Person selbstständig durchgehst, kann an manchen Stellen ein gedanklicher Perspektivwechsel notwendig sein.",
     "START_PERSPEKTIVE": "<h3>Resignation erkennen und damit umgehen</h3>Kann die Person sehen, <i>dass</i> Hilfe etwas an der Situation ändern könnte? Oder dass sich die Situation überhaupt irgendwie verbessern könnte?<br><br>Oder wirkt sie eher verloren, ohnmächtig oder resiginiert?",
     "START_SZ3_SOFORTHILFE": "Okay, dann erlebst du vermutlich gerade starke Überforderung und Hilflosigkeit. Es kann gut sein, dass du zunächst erstmal Unterstützung dabei brauchst, um überhaupt herauszufinden, welche Art von Hilfe du benötigst und wofür.<br><br>Du könntest zum Beispiel jemanden bitten, die einzelnen Schritte hier mit dir durchzugehen. Weißt du jemanden, den/die du fragen könntest? Wie könntest du dein Anliegen formulieren?",
     "START_WER": "",
@@ -40,14 +40,16 @@ const graphData = {
     "HW_LEBENSBEREICHE": "Welcher Lebensbereich macht gerade am meisten Stress? Es gibt einen guten Fragebogen der WHO, der die Lebensqualität in zahlreichen verschiedenen Lebensbereichen erfasst. Wenn man wirklich Klarheit darüber erhalten möchte, welcher Lebensbereich einen gerade am meisten belastet, ist das eine gute Hilfe: https://psytests.org/life/whoqolen-run.html Es handelt sich um einen Fragebogen mit 100 Fragen in englischer Sprache.<br><br><details><summary>Wenn das nicht machbar ist, dann hilft es vielleicht eine Liste der Lebensbereiche durchzulesen und zu überlegen wie zufrieden bzw. unzufrieden man gerade damit ist:</summary><ul><li>Körperliche Befindlichkeit</li><ul><li>Energie</li><li>Schlaf</li><li>Schmerzen</li></ul><li>Psychologischer Zustand</li><ul><li>Denken</li><li>Körperbild</li><li>Positive Gefühle</li><li>Negative Gefühle</li><li>Selbstwert</li></ul><li>Umweltbedingungen</li><ul><li>Angemessene medizinische Versorgung</li><li>Finanzielle Mittel</li><li>Freizeitaktivitäten</li><li>Häusliches Umfeld</li><li>Physische Umwelt</li><li>Sicherheit</li><li>Zugang zu Informationen</li><li>Zugang zu Transportmöglichkeiten</li></ul><li>Soziale Beziehungen</li><ul><li>Persönliche Beziehungen</li><li>Sexuelle Aktivität</li><li>Soziale Unterstützung</li></ul><li>Grad an Unabhängigkeit</li><ul><li>Erledigung alltäglicher dinge</li><li>Arbeit</li><li>Medikamente/medizinische Behandlungen</li><li>Mobilität</li></ul><li>Spiritualität</li></ul></details>",
     "HW_BEDUERFNISSE": "Der Ansatz der Gewaltfreien Kommunikation geht davon aus, dass Menschen bestimmte Bedürfnisse haben, wie zum Beispiel nach Autonomie, Liebe oder Spiel. Wenn einige dieser Bedürfnisse in hohem Maß unerfüllt sind, dann entsteht Stress. Ein Ansatzpunkt wäre also zu verstehen, bei welchen Bedürfnissen die andere Person gerade am meisten Mangel verspürt.<br>Hier ist eine Liste mit menschlichen Bedürfnissen<br><br>EXISTENZ: Luft, Nahrung, Wasser, Bewegung, Schutz, Ruhe/Entspannung, Schlafen, Unterkunft, Körperkontakt, Sexualität<br><br>    AUTONOMIE: Freiheit, Selbstbestimmung, Träume/Werte/Ziele wählen, Unabhängigkeit, Wachstum<br><br>INTERDEPENDENZ: Akzeptanz, Wertschätzung, Nähe, Gemeinschaft, Rücksichtnahme, zur Bereicherung des Lebens beitragen, emotionale Sicherheit, Empathie, Ehrlichkeit, Liebe, Geborgenheit, Harmonie, Respekt, Unterstützung, Verbindung, Vertrauen, Verständnis, Zugehörigkeit<br><br>FEIERN: Leben & Traumerfüllung feiern, Verlust feierlich begehen und betrauern<br><br>SPIEL: Freude, Lachen<br><br>SPIRITUELLE VERBUNDENHEIT: Schönheit, Harmonie, Inspiration, Ordnung, Frieden<br><br>(ais Marschall B. Rosernberg - Gewaltfreie Kommunikation)",
     "HW4": "",
-    "START_AUSMASS": "START_AUSMASS",
+    "START_AUSMASS(\"<h3>Das Ausmaß von Hilfe bestimmen</h3>Weiß die Person, welches Ausmaß von Hilfe ihr helfen würde, also inwieweit sollst du dich einmischen/eingreifen?<br><br>Würde sie zum Beispiel wünschen, dass du die Aufgabe an ihrer Stelle machst? Würde es genügen, wenn du sie motivierst, die Sache zu tun? Oder irgendwas": "pattern of node not matched",
     "WAS_AUSWAHL": "Okay, wir kümmern uns nun darum herauszufinden, welche Art von Hilfe die andere Person brauchen könnte. Wie kommen wir aus dem jetzigen, unangenehmen Zustand in den besseren, angenehmeren Zustand, den die Person gerne erleben möchte?<br><br>Unten sind verschiedene Idee aufgeführt, wie man die passende Hilfe bestimmen kann. Wenn man belastet ist, kann es manchmal schwer sein, auf Ideen zu kommen und Bedürfnisse zu formulieren. Es kann leichter sein, wenn jemand einen Vorschlag macht und man nur überlegen muss, ob man genau diese eine Sache möchte oder nicht.<br><br>Das erste Hilfsmittel ist eine Art sehr umfassende Enzyklopädie von Ideen wie man jemandem helfen kann. Es kann am Anfang etwas überfordernd sein, das alles zu überblicken, aber wenn man erstmal weiß, wie es geht, kann man damit ohne großen Denkaufwand etwas passendes finden.<br><br>Dide Idee unter dem zweiten Link ist für den Einstieg vielleicht etwas leichter, aber erfordert etwas mehr eigene Kreativität und Geisteskraft.",
-    "WAS_LEXIKON": "Okay, hier ist nun eine große Sammlung von verschiedenen Wegen, wie man Menschen helfen und unterstützen kann. Es orientiert sich an der Idee der sieben Sprachen der Liebe [Link einfügen]. Zu den einzelnen Bereichen wurden eine riesige Menge ganz konkreter Ideen gesammelt.<br><br>WICHTIG: Wenn ihr eine passende Idee gefunden habt, müsst ihr auf diese Seite hier zurückkehren und auf den letzten Button ganz unten klicken, um zum nächsten Schritt zu kommen.<br><br><details><summary>Hier ist eine genauere Erklärung wie das funktioniert</summary>Das Lexikon ist in verschiedenen Ebenen aufgebaut und es gibt mehrere Wege es zu nutzen.<br><br>Zu den Ebenen:<ul><li>Die aktuelle Seite ist die erste Ebene. Hier sind alle sieben Kategorien als Startpunkte gelistet mit ersten Beispielen, was damit gemeint ist.</li><li>Auf den Ebenen darunter sind dann mögliche Unterkategorien definiert. Also zum Beispiel: Praktische Unterstützung umfasst unter anderem die Kategorie Hilfe im Haushalt. Zu dieser Kategorie gehören wiederum die Unterkategorien aufräumen und putzen.</li></ul>Zu den Wegen es zu nutzen:<ul><li>Du kannst der Person erstmal alle Überschriften + Beispiele auf dieser Seite vorlesen. Vielleicht hat sie ein Gefühl, was davon am ehesten in die richtige Richtung geht. Dann wechselt ihr eine Ebene tiefer, lest davon alle Vorschlänge, entscheidet, was am ehesten passt, geht eine Ebene tiefer usw.</li><li>Man kann auch einfach nacheinander alles durchgehen.</li><li>Oder man wählt als erstes völlig zufällig einen Vorschlag aus, fragt die Person, ob das helfen würde. Wenn nein, dann such eine neue Idee.</li><li>Ihr könnte auch entscheiden, ob ihr einfach die erste Idee umsetzt, die sich gut anfühlt oder erstmal ein paar Ideen sammelt und dann entscheidet, was davon gerade am hilfreichsten wäre.</li></ul></details><br>⚠️ Mein Ziel ist eine möglichst umfassende Sammlung zu haben, die für eine Vielzahl von Beziehungsformen Orientierung geben können. Einige der Ideen eignen sich auch für entfernte Bekannte, andere nur für Menschen mit denen man intime Nähe teilt. Bitte beim Vorlesen und Auswählen darauf achten, ob ein Vorschlag passend ist für die Art von Miteinander, die ihr habt.    <br><br>💬 \"Ich kann dir jetzt nacheinander ein paar Vorschläge machen und du signalisiert mir, wenn sich etwas davon für dich gut anfühlt, okay? Du kannst entweder erst alles anhören und dann entscheiden oder wir gehen sofort weiter, wenn sich etwas davon gut für dich anfühlt.\"",
+    "WAS_LEXIKON": "Okay, hier ist nun eine große Sammlung von verschiedenen Wegen, wie man Menschen helfen und unterstützen kann. Es orientiert sich an der Idee der sieben Sprachen der Liebe [Link einfügen]. Zu den einzelnen Bereichen wurden eine riesige Menge ganz konkreter Ideen gesammelt.<br><br>⚠️ WICHTIG: Wenn ihr eine passende Idee gefunden habt, müsst ihr auf diese Seite hier zurückkehren und auf den letzten Button ganz unten klicken, um zum nächsten Schritt zu kommen.<br><br><details><summary>Hier ist eine genauere Erklärung wie das funktioniert</summary>Das Lexikon ist in verschiedenen Ebenen aufgebaut und es gibt mehrere Wege es zu nutzen.<br><br>Zu den Ebenen:<ul><li>Die aktuelle Seite ist die erste Ebene. Hier sind alle sieben Kategorien als Startpunkte gelistet mit ersten Beispielen, was damit gemeint ist.</li><li>Auf den Ebenen darunter sind dann mögliche Unterkategorien definiert. Also zum Beispiel: Praktische Unterstützung umfasst unter anderem die Kategorie Hilfe im Haushalt. Zu dieser Kategorie gehören wiederum die Unterkategorien aufräumen und putzen.</li></ul>Zu den Wegen es zu nutzen:<ul><li>Du kannst der Person erstmal alle Überschriften + Beispiele auf dieser Seite vorlesen. Vielleicht hat sie ein Gefühl, was davon am ehesten in die richtige Richtung geht. Dann wechselt ihr eine Ebene tiefer, lest davon alle Vorschlänge, entscheidet, was am ehesten passt, geht eine Ebene tiefer usw.</li><li>Man kann auch einfach nacheinander alles durchgehen.</li><li>Oder man wählt als erstes völlig zufällig einen Vorschlag aus, fragt die Person, ob das helfen würde. Wenn nein, dann such eine neue Idee.</li><li>Ihr könnte auch entscheiden, ob ihr einfach die erste Idee umsetzt, die sich gut anfühlt oder erstmal ein paar Ideen sammelt und dann entscheidet, was davon gerade am hilfreichsten wäre.</li></ul></details><br>⚠️ Mein Ziel ist eine möglichst umfassende Sammlung zu haben, die für eine Vielzahl von Beziehungsformen Orientierung geben kann\t\t. Einige der Ideen eignen sich auch für entfernte Bekannte, andere nur für Menschen mit denen man intime Nähe teilt. Bitte beim Vorlesen und Auswählen darauf achten, ob ein Vorschlag passend ist für die Art von Miteinander, die ihr habt.    <br><br>💬 \"Ich kann dir jetzt nacheinander ein paar Vorschläge machen und du signalisiert mir, wenn sich etwas davon für dich gut anfühlt, okay? Du kannst entweder erst alles anhören und dann entscheiden oder wir gehen sofort weiter, wenn sich etwas davon gut für dich anfühlt.\"",
     "WAS_ABSURD": "Hier geht es darum, einfach zu Beginn erstmal irgendeinen Vorschlag in den Raum zu stellen, dieser kann auch bewusst etwas absurd sein. Zum Beispiel: \"Möchtest du gerne auf einem Lama reiten gehen?\"<br><br>Wenn die Person das nicht möchte, dann bitte sie dir 2-3 Dinge zu nennen, die sie an dem Vorschlag mag und nicht mag.<br><br>Sie würde vielleicht sagen: \"Ich würde gerne das Haus verlassen und etwas anderes sehen. Und ich mag Tiere, die beruhigen mich meistens. Aber ich mag keine Lamas.\"<br><br>Und dann versuch einen neuen Vorschlag zu machen, der diese Wünsche aufgreift, also vielleicht: \"Wie wäre es, wenn wir heute einen Ausflug zum Tierpark machen?\"<br><br>Und dann bitte wieder um ihre Gedanken dazu, greife die auf und mache einen neuen Vorschlag oder passe den jetzigen an, solange bis ihr etwas findet, was die andere Person wirklich möchte.",
     "NOWWHAT_WAS": "Habt ihr etwas gefunden, wie du die andere Person unterstützen kannst?",
     "WEITER": "Möchtet ihr noch nach weiteren Ideen suchen?",
+    "START_AUSMASS dazwischen?\")": "pattern of node not matched",
     "WEITER2": "Möchtet ihr noch nach weiteren Ideen suchen?",
     "UNKLAR": "",
+    "START_AUSMASS": "START_AUSMASS",
     "AUSMASS_AUSWAHL": "Welches Ausmaß von Hilfe ist gerade passend?<ul><li>jemanden motivieren oder überzeugen, etwas zu tun</li><li>jemandem anbieten, bei der Erledigung einer schwierigen Aufgabe dabei zu sein (body doubling, zu einem Termin begleiten)</li><li>jemandem einen Teil einer Aufgabe abnehmen</li><li>jemandem eine Aufgabe komplett abnehmen</li></ul>",
     "BITTE_AUSSPRECHEN": "Bitte die Person nun darum, dir zu sagen, was du für sie tun kannst. Wie lange? Wie oft?",
     "KLAERUNG": "Ist für dich alles verständlich oder ist irgendwas unklar und es wären Rückfragen notwendig?",
@@ -133,37 +135,37 @@ const graphData = {
     {
       "from": "START_SZ1",
       "to": "START_KAPAZITAET",
-      "label": "Prüfen inwieweit man Kapazität hat, jemandem zu helfen (1, 2)"
+      "label": "Prüfen inwieweit man Kapazität hat, jemandem zu helfen"
     },
     {
       "from": "START_SZ1",
       "to": "START_MOTIVATION",
-      "label": "Die eigene Motivation klarbekommen (1)"
+      "label": "Die eigene Motivation klarbekommen"
     },
     {
       "from": "START_SZ1",
       "to": "START_EINWILLIGUNG",
-      "label": "Der anderen Person Hilfe anbieten (1)"
+      "label": "Der anderen Person Hilfe anbieten"
     },
     {
       "from": "START_SZ1",
       "to": "START_WOFUER",
-      "label": "Herausfinden, wofür die Person Hilfe braucht (1, 2, 3)"
+      "label": "Herausfinden, wofür die Person Hilfe braucht"
     },
     {
       "from": "START_SZ1",
       "to": "START_WUNSCH",
-      "label": "Herausfinden, was das Ziel ist (1, 2, 3)"
+      "label": "Herausfinden, was das Ziel ist"
     },
     {
       "from": "START_SZ1",
       "to": "START_WAS",
-      "label": "Herausfinden, was du tun kannst (1, 2, 3)"
+      "label": "Herausfinden, was du tun kannst"
     },
     {
       "from": "START_SZ1",
       "to": "START_BITTE",
-      "label": "Um Hilfe bitten (1, 2, 3)"
+      "label": "Um Hilfe bitten"
     },
     {
       "from": "START",
@@ -173,27 +175,27 @@ const graphData = {
     {
       "from": "START_SZ2",
       "to": "START_KAPAZITAET",
-      "label": "Prüfen inwieweit man Kapazität hat, jemandem zu helfen (1, 2)"
+      "label": "Prüfen inwieweit man Kapazität hat, jemandem zu helfen"
     },
     {
       "from": "START_SZ2",
       "to": "START_WOFUER",
-      "label": "Herausfinden, wofür die Person Hilfe braucht (1, 2, 3)"
+      "label": "Herausfinden, wofür die Person Hilfe braucht"
     },
     {
       "from": "START_SZ2",
       "to": "START_WUNSCH",
-      "label": "Herausfinden, was das Ziel ist (1, 2, 3)"
+      "label": "Herausfinden, was das Ziel ist"
     },
     {
       "from": "START_SZ2",
       "to": "START_WAS",
-      "label": "Herausfinden, was du tun kannst (1, 2, 3)"
+      "label": "Herausfinden, was du tun kannst"
     },
     {
       "from": "START_SZ2",
       "to": "START_BITTE",
-      "label": "Um Hilfe bitten (1, 2, 3)"
+      "label": "Um Hilfe bitten"
     },
     {
       "from": "START",
@@ -208,27 +210,27 @@ const graphData = {
     {
       "from": "START_SZ3_ALLEINE",
       "to": "START_PERSPEKTIVE",
-      "label": "Prüfen, ob die hilfsbedürftige Person resigniert ist (1, 2, 3)"
+      "label": "Prüfen, ob die hilfsbedürftige Person resigniert ist"
     },
     {
       "from": "START_SZ3_ALLEINE",
       "to": "START_WOFUER",
-      "label": "Herausfinden, wofür die Person Hilfe braucht (1, 2, 3)"
+      "label": "Herausfinden, wofür die Person Hilfe braucht"
     },
     {
       "from": "START_SZ3_ALLEINE",
       "to": "START_WUNSCH",
-      "label": "Herausfinden, was das Ziel ist (1, 2, 3)"
+      "label": "Herausfinden, was das Ziel ist"
     },
     {
       "from": "START_SZ3_ALLEINE",
       "to": "START_WAS",
-      "label": "Herausfinden, was du tun kannst (1, 2, 3)"
+      "label": "Herausfinden, was du tun kannst"
     },
     {
       "from": "START_SZ3_ALLEINE",
       "to": "START_BITTE",
-      "label": "Um Hilfe bitten (1, 2, 3)"
+      "label": "Um Hilfe bitten"
     },
     {
       "from": "START_SZ3",
@@ -472,7 +474,7 @@ const graphData = {
     },
     {
       "from": "START_WAS",
-      "to": "START_AUSMASS",
+      "to": "START_AUSMASS(\"<h3>Das Ausmaß von Hilfe bestimmen</h3>Weiß die Person, welches Ausmaß von Hilfe ihr helfen würde, also inwieweit sollst du dich einmischen/eingreifen?<br><br>Würde sie zum Beispiel wünschen, dass du die Aufgabe an ihrer Stelle machst? Würde es genügen, wenn du sie motivierst, die Sache zu tun? Oder irgendwas",
       "label": "ja"
     },
     {
@@ -507,7 +509,7 @@ const graphData = {
     },
     {
       "from": "WEITER",
-      "to": "START_AUSMASS",
+      "to": "START_AUSMASS dazwischen?\")",
       "label": "nein, es macht Sinn, dass wir das jetzige angehen"
     },
     {
