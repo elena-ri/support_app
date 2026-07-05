@@ -15,6 +15,8 @@ const graphData = {
     "START_PERSPEKTIVE": "<h3>Resignation erkennen und damit umgehen</h3>Kann die Person sehen, <i>dass</i> Hilfe etwas an der Situation ändern könnte? Oder dass sich die Situation überhaupt irgendwie verbessern könnte?<br><br>Oder wirkt sie eher verloren, ohnmächtig oder resiginiert?",
     "START_SZ3_SOFORTHILFE": "Okay, dann erlebst du vermutlich gerade starke Überforderung und Hilflosigkeit. Es kann gut sein, dass du zunächst erstmal Unterstützung dabei brauchst, um überhaupt herauszufinden, welche Art von Hilfe du benötigst und wofür.<br><br>Du könntest zum Beispiel jemanden bitten, die einzelnen Schritte hier mit dir durchzugehen. Weißt du jemanden, den/die du fragen könntest? Wie könntest du dein Anliegen formulieren?",
     "START_WER": "",
+    "KAPAZITAET_NEXT": "Der nächste Schritt hängt nun davon ab, auf welchem Pfad du dich befindest.",
+    "KEINE_KAPAZITAET": "Lass es die Person ehrlich aber respektvoll wissen. Hier ist eine kleine Formulierungshilfe dazu:<ul><li>\"Du hast mich gebeten, dass ____\" oder falls du nicht um Hilfe gebeten wurdest: \"Ich kann sehen, dass du gerade in einer sehr schwierigen Situation bist.\"</li><li>\"Ich würde gerne helfen, aber ich kann nicht, weil _____\"</li><li>\"Ich mache stattdessen jetzt _____ um mich um mich selbst zu kümmern und danach dann hoffentlich selbst wieder mehr Energie zu haben.\"</li><li>\"Wie verbleiben wir nun?\"</li></ul>",
     "EINWILLIGUNG_TEIL2": "<h3>Überlegen, auf welche Art und Weise man Hilfe anbietet</h3>Hier sind drei Optionen:<ul><li>Du kannst der anderen Person sagen, dass du generell verfügbar bist und bereit bist ihr zu helfen.</li><ul><li>💬 \"Ich bin da, wenn du mich brauchst.\", \"Melde dich gerne, wenn ich dir helfen kann.\"</li><li>💡 Es liegt dann bei der anderen Person ativ auf dich zuzugehen und dir zu sagen, was du tun kannst. Manchmal kann es notwendig sein, das so zu formulieren, um Grenzen zu wahren und Verantwortungsbereiche aufzuteilen.</li></ul><li>Fragen, was man tun kann:<ul><li>💬 \"Wie kann ich dir helfen?\", \"Kann ich dich irgendwie unterstützen?\"</li><li>💡 Hiermit geht man etwas direkter auf die andere Person zu und eröffnet ein Gespräch dazu, wie man helfen kann. Die andere Person muss dann selber herausfinden und formulieren, was sie von dir braucht.</li></ul></li><li>Konkrete Arten von Unterstützung anbieten</li><ul><li>💬 \"Ich sehe, dass es dir nicht gut geht und ich möchte dich gerne unterstützen. Ich habe überlegt, ob es dir vielleicht helfen würde, wenn ich x oder y tue? Oder wäre vielleicht etwas ganz anderes für dich gut?\"</li><li>💡 Ich persönlich empfinde das für mich selbst oft als den Goldstandard für Situationen, wenn jemand wirklich sehr belastet ist. Man bietet aktiv Verfügbarkeit an und nimmt einer Person die Hürde ab einen um etwas zu bitten und nimmt gleichzeitig auch etwas geistige Arbeit ab, Vorschläge zu machen. Wenn man ohnehin schon sehr überfordert und orientierungslos ist, kann es schwer sein alleine zu überlegen was man braucht.</li></ul></ul>Auf welche Art und Weise möchtest du der anderen Person Hilfe anbieten?<br><details><summary>Hier ist noch eine längere Formuierungshilfe, wie du deine Hilfe anbieten kannst:</summary><ul><li>\"Ich merke/sehe, dass du ________.\"</li><ul><li>in letzter Zeit sehr traurig warst</li><li>dein Chef dich nicht gut behandelt</li><li>dass du oft deine Hausaufgaben nicht geschafft hast</li></ul><li>\"Das beeinflusst mich so: ________, ...\"</li><ul><li>Es macht mich betroffen, das zu sehen.</li><li>Ich mache mir Sorgen darüber.</li></ul><li>\"... weil _______.\"</li><ul><li>du mir wichtig bist</li><li>mir dein Wohlergehen am Herzen liegt und mich das auch alles zunehmend belastet</li><li>du besseres verdient hast</li></ul><li>\"Ich würde dich gerne dabei unterstützen, dass ________.\"</li><ul><li>es dir besser geht</li><li>dass du mehr für dich einstehen kannst</li><li>dass du dich weniger überfordert fühlst</li></ul><li>\"Möchtest du das?\"</li></ul></details><br>Möchte die andere Person deine Hilfe?",
     "RESIGNATION": "Die Person befindet sich möglicherweise in einem Zustand von Resignation.<br><br>Sie braucht als erstes Hilfe dabei zu sehen und zu verstehen,<ul><li>dass sich ihr jetziger Zustand oder ihre Lebenssituation überhaupt verändern können</li><li>dass Hilfe und Unterstützung dazu beitragen können</li></ul>Hier sind ein paar mögliche Ideen dafür.",
     "BLICK_ZURUECK": "<b>Blick zurück:</b> War die Person in der Vergangenheit schon mal in einer ähnlichen Situation wie jetzt? Was ist dann passiert? Ist sie dort heraus gekommen? Hat sich das mit der Zeit verbessert? Was ist genau passiert?",
@@ -26,16 +28,13 @@ const graphData = {
     "WEG": "<b>Der Weg ist das Ziel:</b> Allein schon, dass man aktiv wird, wird etwas an der Situation verändern. Weil man nicht in der Ohnmacht verharrt. Weil man etwas lernt, sobald man sich auf den Weg macht. Damit verwandt ist auch die Idee, dass Hoffnung nicht etwas ist, was man <i>hat</i>, sondern etwas ist, was man <i>tut</i>. Es kann einem niemals jemand eine Garantie geben, dass ein bestimmtes Ergebnis in Zukunft eintreten wird. Das einzige, was man tun kann, ist so zu tun als ob. Also, sich vorstellen, dass das eigene Tun auf jeden Fall Erfolg haben wird und dann das zu tun, was einen dorthin führen würde.",
     "SCHRITTE": "<b>In kleinen, schrittweisen Veränderungen denken:</b> Es ist vielleicht nicht möglich hier und heute das ganze Problem komplett zu lösen, aber vielleicht ist es möglich 5 % Verbesserung oder Linderung zu schaffen. Und vielleicht morgen nochmal. Und übermorgen auch. Und irgendwann kommt vielleicht der Punkt an dem man nicht nur mühsam kleinste Schritte machen kann, sondern an dem auf einmal größere, schnellere Veränderungen in Aussicht stehen, weil man sich eine neue Ausgangsbasis geschaffen hat.",
     "KEINE_EINWILLIGUNG": "Okay, ganz grundsätzlich gibt es für dich erstmal nichts weiter zu tun. Solange die Person nicht dabei ist, sich selbst oder anderen schwerwiegenden Schaden zuzufügen, gilt es ihr Nein zu respektieren. Erwachsene Menschen sind für sich selbst verantwortlich.<br><br>Wichtig wären hier folgende Punkte:<ul><li>Brauchst du ab jetzt vielleicht <b>veränderte Grenzen</b> im Umgang mit der anderen Person? Sie muss sich nicht ändern, aber du musst auch nicht alles mitmachen. Brauchst du vielleicht mehr emotionale/zeitliche/räumliche Distanz? Oder andere Grenzen im Umgang mit ihr?</li><ul><li>z.B. \"Ich verstehe, dass du erstmal nichts an deiner Arbeitssitation ändern möchtest, aber ich stehe in Zukunft nicht mehr jeden Tag dafür zur Verfügung mir deinen Ärger und Frust anzuhören.\"</li></ul><li>Du kannst entscheiden, ob du der Person vielleicht in ein paar Tagen oder Wochen <b>nochmal deine Hilfe anbieten</b> möchtest. Vielleicht ändert sich ihre Stimmung, ihre Lebenssituation oder etwas anderes dahingehend, dass sie doch deine Hilfe möchte.</li><li>Oder du kannst ab jetzt klar sagen, dass es nun die Aufgabe der anderen Person ist, auf dich zu zukommen, wenn sie dich braucht. Du könntest so etwas sagen wie: \"Ich höre, dass du meine Hilfe im Moment nicht möchtest. Wenn sich das ändert, komm jederzeit gerne auf mich zu. Ich will dich gerne unterstützen. Aber ich werde dich ab jetzt nicht nochmal darauf ansprechen.\"</li></ul>",
-    "KAPAZITAET_NEXT": "Der nächste Schritt hängt nun davon ab, auf welchem Pfad du dich befindest.",
-    "KEINE_KAPAZITAET": "Lass es die Person ehrlich aber respektvoll wissen. Hier ist eine kleine Formulierungshilfe dazu:<ul><li>\"Du hast mich gebeten, dass ____\" oder falls du nicht um Hilfe gebeten wurdest: \"Ich kann sehen, dass du gerade in einer sehr schwierigen Situation bist.\"</li><li>\"Ich würde gerne helfen, aber ich kann nicht, weil _____\"</li><li>\"Ich mache stattdessen jetzt _____ um mich um mich selbst zu kümmern und danach dann hoffentlich selbst wieder mehr Energie zu haben.\"</li><li>\"Wie verbleiben wir nun?\"</li></ul>",
-    "START_VERFUEGBARKEIT": "START_VERFUEGBARKEIT",
     "WOFUER": "Okay, dann bitte die Person dir das zu sagen. Wenn du möchtest, kannst du auch mitschreiben. Wenn irgendwas für dich nicht verständlich oder unklar ist, frage nochmal nach.",
     "HILFE_WOFUER_ANZAHL": "Habt ihr genau ein Problem oder mehrere identifiziert?",
+    "HILFE_WOFUER_PRIORISIERUNG": "<h3>Prioritäten setzen</h3>Okay, für den weiteren Verlauf wäre es gut, wenn ihr erstmal herausfindet, was gerade das wichtigste Problem ist, das ihr als erstes angehen solltet. Ihr könnt eine Liste machen, mit allem, was ihr gefunden habt, damit das nicht verloren geht. Und dann für jedes der Probleme einzeln das Hilfssystem durchgehen. Aber man kann nicht alles gleichzeitig angehen, deswegen versuchen wir hier zu priorisieren.<br><br>Folgende Fragen können dabei helfen:<ul><li>Was belastet dich gerade am meisten?</li><li>Gibt es etwas, so dringend ist, dass es auf jeden Fall als erstes erledigt werden sollte?</li><li>Was würde dir am meisten Erleichterung bringen?</li><li>Wo könntest du am schnellsten oder unkompliziertesten eine erste Verbesserung erzielen?</li><li>Gibt es ein Kernproblem, das du angehen kannst und das dann gleichzeitig mehrere Bereiche verbessert oder löst?</li></ul>",
     "ORIENTIERUNGSLOSIGKEIT": "Die Person befindet sich möglicherweise in einem Zustand von Orientierungslosigkeit. Sie braucht als nächstes Hilfe dabei, zu verstehen und dir zu sagen, wofür sie Hilfe benötigt.<br><br>Hier sind verschiedene Wege um genauer einzukreisen, was gerade der unangenehme Zustand ist, den die Person erlebt. Also, was sind Ursachen und Auslöser dafür? Das ist wichtig, um ein genaueres Bild dafür zu bekommen, wo und wie Hilfe überhaupt ansetzen kann.<br><br>Du kannst die Methoden erstmal durchlesen und der anderen Person dann verschiedene davon vorschlagen und ihr schaut zusammen, womit ihr am besten weiter kommt.<br><br>Es macht Sinn sich hierzu Notizen zu machen, damit ihr euch später an alles erinnert.",
     "HW_SAETZE": "Das Gehirn kann manchmal Schwierigkeiten haben, Fragen zu beantworten, kann aber meistens sehr leicht Sätze vervollständigen. Du kannst es mal an dir selbst testen. Was passiert als erstes, wenn ich dich frage: \"Was überfordert dich gerade?\" Bei vielen Menschen ist da eher ein Zögern und Stocken.<br><br> Was passiert hingegen, wenn ich dich bitte, diesen Satz zu vervollständigen: \"Mich überfordert gerade, dass ...\"? Viele Menschen finden dabei direkt sehr schnell mindestens eine Antwort oder es sprudeln gleich mehrere heaus<br><br>Es kann sinnvoll sein, einen bestimmten Satz mehrfach zu vervollständigen, um mehrere Aspekte zum Vorschein zu bringen und damit ein Problem genauer einzukreisen.<br><br>Hier sind ein paar Vorschläge für Satzanfänge, die sich gut eignen, um Stresspunkte aufzuspüren:<ul><li>\"Was mich gerade am meisten stresst, ist ...\"</li><li>\"Ich schaffe es einfach nicht, ...\"</li><li>\"Ich bin überfordert damit ...\"</li><li>\"Ich habe keine Energie, um ...\"</li><li>\"Ich leide am meisten darunter, dass ...\"</li></ul>Manchmal kann man den Stresspunkt auch unter den Wünschen erkennen. (Wünsche und Ziele untersuchen wir später noch genauer!) Vielleicht helfen solche Satzanfänge wie:<ul><li>\"Was ich wirklich gerne schaffen würde, ...\"</li><li>\"Es würde mich sehr beruhigen, wenn...\"</li><li>\"Ich würde so gerne...\"</li><li>\"Es würde mich am meisten erleichtern, wenn ...\"</li><li>\"Ich wäre so gerne...\"</li></ul>Du kannst entweder einen Satzanfang aussuchen und die Person bitten ihn mehrfach zu vervollständigen. Oder lass die andere Person sich selbst einen Satzanfang aussuchen, der sie am meisten anspricht.",
     "NOW_WHAT": "Hast du das Gefühl, dass ihr damit einen oder mehrere relevante Stresspunkte gefunden habt?",
     "HILFE_WOFUER_WEITERMACHEN": "Möchtest du noch eine der anderen Methoden durchgehen um zu sehen, ob ihr noch was anderes findet?",
-    "HILFE_WOFUER_PRIORISIERUNG": "<h3>Prioritäten setzen</h3>Okay, für den weiteren Verlauf wäre es gut, wenn ihr erstmal herausfindet, was gerade das wichtigste Problem ist, das ihr als erstes angehen solltet. Ihr könnt eine Liste machen, mit allem, was ihr gefunden habt, damit das nicht verloren geht. Und dann für jedes der Probleme einzeln das Hilfssystem durchgehen. Aber man kann nicht alles gleichzeitig angehen, deswegen versuchen wir hier zu priorisieren.<br><br>Folgende Fragen können dabei helfen:<ul><li>Was belastet dich gerade am meisten?</li><li>Gibt es etwas, so dringend ist, dass es auf jeden Fall als erstes erledigt werden sollte?</li><li>Was würde dir am meisten Erleichterung bringen?</li><li>Wo könntest du am schnellsten oder unkompliziertesten eine erste Verbesserung erzielen?</li><li>Gibt es ein Kernproblem, das du angehen kannst und das dann gleichzeitig mehrere Bereiche verbessert oder löst?</li></ul>",
     "HW_ZUSTAND": "Fühlt sich dier Person gerade durch ihren emotionalen, geistigen und/oder körperlichen Zustand überfordert?Erlebt sie gerade:<ul><li>Gefühlswelt</li><ul><li>es ist zu viel auf einmal los: emotional aufgewühlt oder überflutet (starkes Weinen, Wutanfall...)</li><li>es ist zu wenig los: emotional benommen, abgeschaltet, taub</li><li>es ist keine Kraft mehr da: emotional erschöpft</li></ul><li>Geistiger Zustand</li><ul><li>Es ist zu wenig los: unkonzentriert, unfokussiert, unaufmerksam</li><li>Es ist zu viel auf einmal los: überreizt, überflutet von zu vielen Gedanken und Ideen, das Gehirn kommt nicht zur Ruhe</li><li>Keine Kraft mehr da: geistig erschöpft, benommen</li></ul><li>Körperlicher Zustand</li><ul><li>müde, erschöpft (durch zu wenig Schlaf)</li><li>kraftlos, erschöpft (durch körperliche Anstrenung</li><li>ruhelos, aufgedreht, obwohl man Ruhe/Schlaf braucht</li><li>hyperaktiv, nicht still sitzen können</li></ul></ul>",
     "HW_LEBENSBEREICHE": "Welcher Lebensbereich macht gerade am meisten Stress? Es gibt einen guten Fragebogen der WHO, der die Lebensqualität in zahlreichen verschiedenen Lebensbereichen erfasst. Wenn man wirklich Klarheit darüber erhalten möchte, welcher Lebensbereich einen gerade am meisten belastet, ist das eine gute Hilfe: https://psytests.org/life/whoqolen-run.html Es handelt sich um einen Fragebogen mit 100 Fragen in englischer Sprache.<br><br><details><summary>Wenn das nicht machbar ist, dann hilft es vielleicht eine Liste der Lebensbereiche durchzulesen und zu überlegen wie zufrieden bzw. unzufrieden man gerade damit ist:</summary><ul><li>Körperliche Befindlichkeit</li><ul><li>Energie</li><li>Schlaf</li><li>Schmerzen</li></ul><li>Psychologischer Zustand</li><ul><li>Denken</li><li>Körperbild</li><li>Positive Gefühle</li><li>Negative Gefühle</li><li>Selbstwert</li></ul><li>Umweltbedingungen</li><ul><li>Angemessene medizinische Versorgung</li><li>Finanzielle Mittel</li><li>Freizeitaktivitäten</li><li>Häusliches Umfeld</li><li>Physische Umwelt</li><li>Sicherheit</li><li>Zugang zu Informationen</li><li>Zugang zu Transportmöglichkeiten</li></ul><li>Soziale Beziehungen</li><ul><li>Persönliche Beziehungen</li><li>Sexuelle Aktivität</li><li>Soziale Unterstützung</li></ul><li>Grad an Unabhängigkeit</li><ul><li>Erledigung alltäglicher dinge</li><li>Arbeit</li><li>Medikamente/medizinische Behandlungen</li><li>Mobilität</li></ul><li>Spiritualität</li></ul></details>",
     "HW_BEDUERFNISSE": "Der Ansatz der Gewaltfreien Kommunikation geht davon aus, dass Menschen bestimmte Bedürfnisse haben, wie zum Beispiel nach Autonomie, Liebe oder Spiel. Wenn einige dieser Bedürfnisse in hohem Maß unerfüllt sind, dann entsteht Stress. Ein Ansatzpunkt wäre also zu verstehen, bei welchen Bedürfnissen die andere Person gerade am meisten Mangel verspürt.<br>Hier ist eine Liste mit menschlichen Bedürfnissen<br><br>EXISTENZ: Luft, Nahrung, Wasser, Bewegung, Schutz, Ruhe/Entspannung, Schlafen, Unterkunft, Körperkontakt, Sexualität<br><br>    AUTONOMIE: Freiheit, Selbstbestimmung, Träume/Werte/Ziele wählen, Unabhängigkeit, Wachstum<br><br>INTERDEPENDENZ: Akzeptanz, Wertschätzung, Nähe, Gemeinschaft, Rücksichtnahme, zur Bereicherung des Lebens beitragen, emotionale Sicherheit, Empathie, Ehrlichkeit, Liebe, Geborgenheit, Harmonie, Respekt, Unterstützung, Verbindung, Vertrauen, Verständnis, Zugehörigkeit<br><br>FEIERN: Leben & Traumerfüllung feiern, Verlust feierlich begehen und betrauern<br><br>SPIEL: Freude, Lachen<br><br>SPIRITUELLE VERBUNDENHEIT: Schönheit, Harmonie, Inspiration, Ordnung, Frieden<br><br>(ais Marschall B. Rosernberg - Gewaltfreie Kommunikation)",
@@ -248,6 +247,31 @@ const graphData = {
       "label": "nein [Link fehlt]"
     },
     {
+      "from": "START_KAPAZITAET",
+      "to": "KAPAZITAET_NEXT",
+      "label": "ich habe ausreichend Kapazität"
+    },
+    {
+      "from": "KAPAZITAET_NEXT",
+      "to": "START_MOTIVATION",
+      "label": "1. Du bemerkst, dass jemand Hilfe brauchen könnte, aber wurdest (noch) nicht darum gebeten zu helfen."
+    },
+    {
+      "from": "KAPAZITAET_NEXT",
+      "to": "START_WOFUER",
+      "label": "2. Du hast jemandem Hilfe angeboten und die Person hat zugestimmt. Oder die Person hat dich von sich aus darum gebeten."
+    },
+    {
+      "from": "START_KAPAZITAET",
+      "to": "KEINE_KAPAZITAET",
+      "label": "ich habe gerade nicht genug Kapazität um jemandem zu helfen"
+    },
+    {
+      "from": "START_MOTIVATION",
+      "to": "START_EINWILLIGUNG",
+      "label": "Next"
+    },
+    {
       "from": "START_EINWILLIGUNG",
       "to": "EINWILLIGUNG_TEIL2",
       "label": "Next"
@@ -333,51 +357,6 @@ const graphData = {
       "label": "nein oder nicht jetzt"
     },
     {
-      "from": "START_KAPAZITAET",
-      "to": "KAPAZITAET_NEXT",
-      "label": "ich habe ausreichend Kapazität"
-    },
-    {
-      "from": "START_KAPAZITAET",
-      "to": "KEINE_KAPAZITAET",
-      "label": "ich habe gerade nicht genug Kapazität um jemandem zu helfen"
-    },
-    {
-      "from": "KAPAZITAET_NEXT",
-      "to": "START_MOTIVATION",
-      "label": "1. Du bemerkst, dass jemand Hilfe brauchen könnte, aber wurdest (noch) nicht darum gebeten zu helfen."
-    },
-    {
-      "from": "KAPAZITAET_NEXT",
-      "to": "START_WOFUER",
-      "label": "2. Du hast jemandem Hilfe angeboten und die Person hat zugestimmt. Oder die Person hat dich von sich aus darum gebeten."
-    },
-    {
-      "from": "START_MOTIVATION",
-      "to": "START_EINWILLIGUNG",
-      "label": "Next"
-    },
-    {
-      "from": "START_VERFUEGBARKEIT",
-      "to": "KEINE_EINWILLIGUNG",
-      "label": "nein"
-    },
-    {
-      "from": "START_VERFUEGBARKEIT",
-      "to": "START_PERSPEKTIVE",
-      "label": "Next"
-    },
-    {
-      "from": "START_PERSPEKTIVE",
-      "to": "START_WOFUER",
-      "label": "eher zuversichtlich"
-    },
-    {
-      "from": "START_PERSPEKTIVE",
-      "to": "RESIGNATION",
-      "label": "eher resigniert"
-    },
-    {
       "from": "START_WOFUER",
       "to": "WOFUER",
       "label": "ja"
@@ -385,6 +364,21 @@ const graphData = {
     {
       "from": "WOFUER",
       "to": "HILFE_WOFUER_ANZAHL",
+      "label": "Next"
+    },
+    {
+      "from": "HILFE_WOFUER_ANZAHL",
+      "to": "START_WUNSCH",
+      "label": "nur eins"
+    },
+    {
+      "from": "HILFE_WOFUER_ANZAHL",
+      "to": "HILFE_WOFUER_PRIORISIERUNG",
+      "label": "mehrere"
+    },
+    {
+      "from": "HILFE_WOFUER_PRIORISIERUNG",
+      "to": "START_WUNSCH",
       "label": "Next"
     },
     {
@@ -416,21 +410,6 @@ const graphData = {
       "from": "HILFE_WOFUER_WEITERMACHEN",
       "to": "HILFE_WOFUER_ANZAHL",
       "label": "nein"
-    },
-    {
-      "from": "HILFE_WOFUER_ANZAHL",
-      "to": "START_WUNSCH",
-      "label": "nur eins"
-    },
-    {
-      "from": "HILFE_WOFUER_ANZAHL",
-      "to": "HILFE_WOFUER_PRIORISIERUNG",
-      "label": "mehrere"
-    },
-    {
-      "from": "HILFE_WOFUER_PRIORISIERUNG",
-      "to": "START_WUNSCH",
-      "label": "Next"
     },
     {
       "from": "NOW_WHAT",
@@ -581,6 +560,16 @@ const graphData = {
       "from": "BITTE_NEIN",
       "to": "START_BITTE",
       "label": "Next"
+    },
+    {
+      "from": "START_PERSPEKTIVE",
+      "to": "START_WOFUER",
+      "label": "eher zuversichtlich"
+    },
+    {
+      "from": "START_PERSPEKTIVE",
+      "to": "RESIGNATION",
+      "label": "eher resigniert"
     },
     {
       "from": "WAS_LEXIKON",
