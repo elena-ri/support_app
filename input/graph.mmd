@@ -96,7 +96,7 @@ START_EINWILLIGUNG --> EINWILLIGUNG_TEIL2("<h3>Überlegen, auf welche Art und We
 	
 			SCHRITTE --> RESIGNATION_TEST
 	
-	EINWILLIGUNG_TEIL2 -- nein oder nicht jetzt --> KEINE_EINWILLIGUNG("Okay, ganz grundsätzlich gibt es für dich erstmal nichts weiter zu tun. Solange die Person nicht dabei ist, sich selbst oder anderen schwerwiegenden Schaden zuzufügen, gilt es ihr Nein zu respektieren. Erwachsene Menschen sind für sich selbst verantwortlich.<br><br>Wichtig wären hier folgende Punkte:<ul><li>Brauchst du ab jetzt vielleicht <b>veränderte Grenzen</b> im Umgang mit der anderen Person? Sie muss sich nicht ändern, aber du musst auch nicht alles mitmachen. Brauchst du vielleicht mehr emotionale/zeitliche/räumliche Distanz? Oder andere Grenzen im Umgang mit ihr?</li><ul><li>z.B. "Ich verstehe, dass du erstmal nichts an deiner Arbeitssitation ändern möchtest, aber ich stehe in Zukunft nicht mehr jeden Tag dafür zur Verfügung mir deinen Ärger und Frust anzuhören."</li></ul><li>Du kannst entscheiden, ob du der Person vielleicht in ein paar Tagen oder Wochen <b>nochmal deine Hilfe anbieten</b> möchtest. Vielleicht ändert sich ihre Stimmung, ihre Lebenssituation oder etwas anderes dahingehend, dass sie doch deine Hilfe möchte.</li><li>Oder du kannst zum jetzigen Zeitpunkt etwas sagen wie: "Ich höre, dass du meine Hilfe im Moment nicht möchtest. Wenn sich das ändert, komm jederzeit gerne auf mich zu. Ich will dich gerne unterstützen. Aber ich werde dich ab jetzt nicht nochmal darum bitten."</li></ul>")
+	EINWILLIGUNG_TEIL2 -- nein oder nicht jetzt --> KEINE_EINWILLIGUNG("Okay, ganz grundsätzlich gibt es für dich erstmal nichts weiter zu tun. Solange die Person nicht dabei ist, sich selbst oder anderen schwerwiegenden Schaden zuzufügen, gilt es ihr Nein zu respektieren. Erwachsene Menschen sind für sich selbst verantwortlich.<br><br>Wichtig wären hier folgende Punkte:<ul><li>Brauchst du ab jetzt vielleicht <b>veränderte Grenzen</b> im Umgang mit der anderen Person? Sie muss sich nicht ändern, aber du musst auch nicht alles mitmachen. Brauchst du vielleicht mehr emotionale/zeitliche/räumliche Distanz? Oder andere Grenzen im Umgang mit ihr?</li><ul><li>z.B. "Ich verstehe, dass du erstmal nichts an deiner Arbeitssitation ändern möchtest, aber ich stehe in Zukunft nicht mehr jeden Tag dafür zur Verfügung mir deinen Ärger und Frust anzuhören."</li></ul><li>Du kannst entscheiden, ob du der Person vielleicht in ein paar Tagen oder Wochen <b>nochmal deine Hilfe anbieten</b> möchtest. Vielleicht ändert sich ihre Stimmung, ihre Lebenssituation oder etwas anderes dahingehend, dass sie doch deine Hilfe möchte.</li><li>Oder du kannst ab jetzt klar sagen, dass es nun die Aufgabe der anderen Person ist, auf dich zu zukommen, wenn sie dich braucht. Du könntest so etwas sagen wie: "Ich höre, dass du meine Hilfe im Moment nicht möchtest. Wenn sich das ändert, komm jederzeit gerne auf mich zu. Ich will dich gerne unterstützen. Aber ich werde dich ab jetzt nicht nochmal darauf ansprechen."</li></ul>")
 
 
 
@@ -108,7 +108,7 @@ START_EINWILLIGUNG --> EINWILLIGUNG_TEIL2("<h3>Überlegen, auf welche Art und We
 	
 		KAPAZITAET_NEXT -- 1. Du bemerkst, dass jemand Hilfe brauchen könnte, aber wurdest (noch) nicht darum gebeten zu helfen. --> START_MOTIVATION
 		
-		KAPAZITAET_NEXT -- 2. Du hast jemandem Hilfe angeboten und die Person hat zugestimmt. Oder die Person hat dich von sich aus darum gebeten. --> START_VERFUEGBARKEIT
+		KAPAZITAET_NEXT -- 2. Du hast jemandem Hilfe angeboten und die Person hat zugestimmt. Oder die Person hat dich von sich aus darum gebeten. --> START_WOFUER 
 
 	START_MOTIVATION --> START_EINWILLIGUNG
 
@@ -161,8 +161,10 @@ START_EINWILLIGUNG --> EINWILLIGUNG_TEIL2("<h3>Überlegen, auf welche Art und We
             //TODO Wie bereite ich das so auf, dass man es gut nutzen kann? Im besten Fall wäre es ja ein Fragebogen den man durchklicken und auswerten kann. Aber das geht in meiner jetzigen Datenlogik nicht.
             ORIENTIERUNGSLOSIGKEIT -- Welche Bedürfnisse sind in relevantem Ausmaß unerfüllt? --> HW_BEDUERFNISSE("Der Ansatz der Gewaltfreien Kommunikation geht davon aus, dass Menschen bestimmte Bedürfnisse haben, wie zum Beispiel nach Autonomie, Liebe oder Spiel. Wenn einige dieser Bedürfnisse in hohem Maß unerfüllt sind, dann entsteht Stress. Ein Ansatzpunkt wäre also zu verstehen, bei welchen Bedürfnissen die andere Person gerade am meisten Mangel verspürt.<br>Hier ist eine Liste mit menschlichen Bedürfnissen<br><br>EXISTENZ: Luft, Nahrung, Wasser, Bewegung, Schutz, Ruhe/Entspannung, Schlafen, Unterkunft, Körperkontakt, Sexualität<br><br>    AUTONOMIE: Freiheit, Selbstbestimmung, Träume/Werte/Ziele wählen, Unabhängigkeit, Wachstum<br><br>INTERDEPENDENZ: Akzeptanz, Wertschätzung, Nähe, Gemeinschaft, Rücksichtnahme, zur Bereicherung des Lebens beitragen, emotionale Sicherheit, Empathie, Ehrlichkeit, Liebe, Geborgenheit, Harmonie, Respekt, Unterstützung, Verbindung, Vertrauen, Verständnis, Zugehörigkeit<br><br>FEIERN: Leben & Traumerfüllung feiern, Verlust feierlich begehen und betrauern<br><br>SPIEL: Freude, Lachen<br><br>SPIRITUELLE VERBUNDENHEIT: Schönheit, Harmonie, Inspiration, Ordnung, Frieden<br><br>(ais Marschall B. Rosernberg - Gewaltfreie Kommunikation)")
             
+            	    HW_BEDUERFNISSE --> NOW_WHAT
+            
             //TODO: Inhalt ergänzen
-            ORIENTIERUNGSLOSIGKEIT -- Was ist meine Aufgabe/mein Wunsch/mein Ziel und an welchem Punkt komme ich nicht weiter? --> HW4("")
+            ORIENTIERUNGSLOSIGKEIT -- Was ist meine Aufgabe/mein Wunsch/mein Ziel und an welchem Punkt komme ich nicht weiter? [Link fehlt] --> HW4("")
             
 
 	START_WUNSCH --> START_WAS
@@ -170,7 +172,7 @@ START_EINWILLIGUNG --> EINWILLIGUNG_TEIL2("<h3>Überlegen, auf welche Art und We
 
 //TODO: ggf. Zwischenschritt einfügen: Akzeptanz für den Status quo finden
             
-    START_WAS -- ja --> START_AUSMASS("<h3>Das Ausmaß von Hilfe bestimmen</h3>Weiß die Person, welches Ausmaß von Hilfe ihr helfen würde, also inwieweit sollst du dich einmischen/eingreifen?<br><br>Würde sie zum Beispiel wünschen, dass du die Aufgabe an ihrer Stelle machst? Würde es genügen, wenn du sie motivierst, die Sache zu tun? Oder irgendwas
+    START_WAS -- ja --> START_AUSMASS("<h3>Das Ausmaß von Hilfe bestimmen</h3>Weiß die Person, welches Ausmaß von Hilfe ihr helfen würde, also inwieweit sollst du dich einmischen/eingreifen?<br><br>Würde sie zum Beispiel wünschen, dass du die Aufgabe an ihrer Stelle machst? Würde es genügen, wenn du sie motivierst, die Sache zu tun? Oder irgendwas dazwischen?")
     // TODO: Option einfügen für absurde Vorschläge, dann fragen, weshalb nicht
     START_WAS -- unklar oder nein --> WAS_AUSWAHL("Okay, wir kümmern uns nun darum herauszufinden, welche Art von Hilfe die andere Person brauchen könnte. Wie kommen wir aus dem jetzigen, unangenehmen Zustand in den besseren, angenehmeren Zustand, den die Person gerne erleben möchte?<br><br>Unten sind verschiedene Idee aufgeführt, wie man die passende Hilfe bestimmen kann. Wenn man belastet ist, kann es manchmal schwer sein, auf Ideen zu kommen und Bedürfnisse zu formulieren. Es kann leichter sein, wenn jemand einen Vorschlag macht und man nur überlegen muss, ob man genau diese eine Sache möchte oder nicht.<br><br>Das erste Hilfsmittel ist eine Art sehr umfassende Enzyklopädie von Ideen wie man jemandem helfen kann. Es kann am Anfang etwas überfordernd sein, das alles zu überblicken, aber wenn man erstmal weiß, wie es geht, kann man damit ohne großen Denkaufwand etwas passendes finden.<br><br>Dide Idee unter dem zweiten Link ist für den Einstieg vielleicht etwas leichter, aber erfordert etwas mehr eigene Kreativität und Geisteskraft.")
     
@@ -186,7 +188,7 @@ START_EINWILLIGUNG --> EINWILLIGUNG_TEIL2("<h3>Überlegen, auf welche Art und We
 	    	NOWWHAT_WAS -- ja --> WEITER("Möchtet ihr noch nach weiteren Ideen suchen?")
 	    	
 	    		WEITER -- ja --> WAS_AUSWAHL
-	    		WEITER -- nein, es macht Sinn, dass wir das jetzige angehen --> START_AUSMASS dazwischen?")
+	    		WEITER -- nein, es macht Sinn, dass wir das jetzige angehen --> START_AUSMASS
 
 	    	NOWWHAT_WAS -- nein --> WEITER2("Möchtet ihr noch nach weiteren Ideen suchen?")
 
@@ -215,15 +217,15 @@ WAS_LEXIKON -- Ich kann dich in praktischen Dingen unterstützen. Ich könnte di
     D -- Haushalt --> D1("<h3>Haushalt</h3>Ich könnte zum Beispiel:")
         D1 -- Für mehr Ordnung und Sauberkeit in deinem Zuhause sorgen. --> D11("Zum BeispieL:<ul><li>den Abwasch erledigen, Spülmaschine aus- und einräumen</li><li>Müll wegräumen</li><li>eine besonders schmutzige Ecke putzen</li><li>das Bett frisch beziehen</li><li>Dinge aufräumen</li><li>Dinge ausmisten</li></ul>")
         D1 -- Einkäufe für dich erledigen --> D12("Evtl. auch zusätzlich mit dir zusammen eine Einkaufsliste erstellen")
-    D -- Ernährung --> D2("<h3>Ernährung</h3>Ich könnte zum Beispiel:<ul><li>Essensplanung für die kommenden Tage mit dir machen oder für dich machen</li><li>Essen kochen (für jetzt oder Mahlzeiten vorbereiten/vorkochen</li><li>den Kühlschrank/Vorratsschrank durchsortieren, verdorbenes entsorgen</li><li>Rezepte heraussuchen (ggf. mit Rücksicht auf bestimmte Ernährungsbedürfnisse)</li><li></li></ul>")
-    D -- Körperpflege --> D3("Zum Beispiel:<ul><li>duschen oder baden</li><li>Haare waschen</li><li>Zähne putzen</li><li>Finger- oder Fußnägel schneiden</li><li>Gesichtshaar pflegen (z.B. Bart stutzen oder rasieren, Nasenhaare kürzen, ...)</li><li>Körperhaar pflegen</li></ul>")
+    D -- Ernährung --> D2("<h3>Ernährung</h3>Ich könnte zum Beispiel:<ul><li>Essensplanung für die kommenden Tage mit dir machen oder für dich machen</li><li>Essen kochen (für jetzt oder Mahlzeiten vorbereiten/vorkochen)</li><li>den Kühlschrank/Vorratsschrank durchsortieren, verdorbenes entsorgen</li><li>Rezepte heraussuchen (ggf. mit Rücksicht auf bestimmte Ernährungsbedürfnisse)</li></ul>")
+    D -- Körperpflege --> D3("Zum Beispiel:<ul><li>duschen oder baden</li><li>Haare waschen</li><li>Zähne putzen</li><li>Finger- oder Fußnägel schneiden</li><li>Gesichtshaar pflegen (z.B. Bart stutzen oder rasieren, ...)</li><li>Körperhaar pflegen (z.B. Beine</li></ul>")
     
-    D -- Medizin und Gesundheit --> D8("Zum Beispiel:<ul><li>eine Wunde/Verletzung versorgen</li><li>an Medikamenteneinnahme erinnern</li><li>Gesundheits-/Bewusstseinszustand überwachen (z.B. nach einer Kopfverletzung, nach Medikamenteneinnahme)</li><li>einen Arzttermin ausmachen oder kurzfristige medizinische Hilfe organisieren (zum ärztlicher Bereitschaftsdienst oder zur Notaufnahme fahren, Rettungsdienst anrufen</li><li>zu einem Arzttermin begleiten (bis vor die Eingangstür, bis ins Wartezimmer, bei Gesprächen und Untersuchungen dabei sein</li></ul>")
+    D -- Medizin und Gesundheit --> D8("Zum Beispiel:<ul><li>eine Wunde/Verletzung versorgen</li><li>an Medikamenteneinnahme erinnern</li><li>Gesundheits-/Bewusstseinszustand überwachen (z.B. nach einer Kopfverletzung, nach Medikamenteneinnahme)</li><li>einen Arzttermin ausmachen oder kurzfristige medizinische Hilfe organisieren (zum ärztlicher Bereitschaftsdienst oder zur Notaufnahme fahren, Rettungsdienst anrufen)</li><li>zu einem Arzttermin begleiten (bis vor die Eingangstür, bis ins Wartezimmer, bei Gesprächen und Untersuchungen dabei sein</li></ul>")
     
     D -- Interaktionen und Kommunikation mit anderen Menschen übernehmen --> D4("Zum Beispiel:<ul><li>irgendwo anrufen, ein Telefongespräch führen</li><li>eine Nachricht formulieren/verschicken (Messenger, Mail, Brief)</li><li>eine Nachricht lesen</li><li>in echt mit jemandem sprechen</li></ul>")
     D -- Angelegenheiten mit Behörden --> D5("Zum Beispiel:<ul><li>einen Antrag stellen</li><li>einen Termin vereinbaren</li><li>zu einem Termin gehen</li></ul>")
-    D -- Betreuung von Kindern oder auf andere hilfsbedürftige Menschen, die sonst in deiner Obhut sind --> D6("D6")
-    D -- Begleitung rund um eine herausfordernde Angelegenheit (z.B. ein emotional aufgeladenes ToDo, ein schwieriger Termin) -->  D8("Ich könnte zum Beispiel:<ul><li>dabei sein</li><ul>davor, währenddessen, danach</li></ul><li>über diese Wege:</li><ul>schreiben, Telefon, Video, persönlich</ul></ul>")
+    D -- Betreuung von Kindern oder anderer hilfsbedürftiger Menschen, die sonst in deiner Obhut sind [Link fehlt] --> D6("D6")
+    D -- Begleitung rund um eine herausfordernde Angelegenheit (z.B. ein emotional aufgeladenes ToDo, ein schwieriger Termin) -->  D13("Ich könnte zum Beispiel:<ul><li>dabei sein</li><ul>davor, währenddessen, danach</li></ul><li>über diese Wege:</li><ul>schreiben, Telefon, Video, persönlich</ul></ul>")
 
 WAS_LEXIKON -- Vielleicht brauchst du jemanden, der dir etwas von seiner Geisteskraft gibt - ein Problem durchdenkt, gute Ideen hat, eine Lösung für etwas findet. --> F("<h3>Geistige Unterstützung</h3> Das bedeutet, jemanden mit der eigenen geistigen Kapazität zu unterstützen. Es kann entweder darum gehen, dass die Person ein Problem hat, das allein in ihrer Verantwortung liegt und wo du unterstützend dabei sein kannst. Es kann aber auch sein, dass es ein Problem gibt, was euch beide betrifft, wo es notwendig sein kann, die Last gleichmäßiger zu verteilen.")
 
@@ -285,17 +287,17 @@ WAS_LEXIKON -- Du kannst emotionale Resonanz und Unterstützung bekommen. Ich k�
 
     E -- bei Gefühlswahrnehmung und -verarbeitung unterstützen --> E2("Zum Beispiel")
         E2 -- dabei helfen, wahrzunehmen, was jemand fühlt --> E21("Manchmal merken Menschen einfach nur, dass sie sich nicht gut fühlen, aber können gar nicht genau sagen, was eigentlich los ist. Manchmal kann es aber wichtig sein, klarer zu verstehen, was eigentlich los ist. Ist die Person ängstlich, wütend oder traurig? Es kann allein schon erleichtern das benennen zu können und es hilft dabei dann auch passende Lösungen zu finden.")
-        E2 -- dabei helfen, die Ursachen dafür zu verstehen --> E22("")
+        E2 -- dabei helfen, die Auslöser und Ursachen dafür zu verstehen [Link fehlt] --> E22("")
         E2 -- dabei helfen, den emotionalen Zustand zu verändern --> E23("Was soll sich verändern?")
         
-            E23 -- positive Gefühle herbeiführen oder negative Gefühle verringern --> E232("2 Optionen")
+            E23 -- die Gefühlsqualität verändern (positive Gefühle herbeiführen oder negative Gefühle verringern) --> E232("2 Optionen")
                 E232 -- dabei helfen, positive Gefühle zu erzeugen --> E2321("Zum Beispiel")
                     E2321 -- der anderen Person eine Freude machen --> E23211("Weißt du, was ihr Freude macht? Was sie meistens zum Lachen oder zum Strahlen bringt? Was findet sie wirklich schön und besonders?")
-                        E23211 -- etwas schönes miteinander unternehmen --> D
+                        E23211 -- etwas schönes miteinander unternehmen --> H
                         E23211 -- siehe auch alle andere Ideen in diesem System --> WAS_LEXIKON
                     E2321 -- Hoffnung / Ermutigung geben [kein Link] --> E23212("")
                     E2321 -- Selbstwertgefühl stärken --> E23213("Zum Beispiel:<ul><li>ggf. vorhandene Selbstkritik abmildern</li><li>bestimmte Eigenschaften oder Verhaltensweisen anerkennen</li><li>Leistungen anerkennen, Stolz ausdrücken</li></ul>")
-                E232 -- dabei helfen, negative Gefühle zu verringern --> E2322("Welche Gefühle erlebt die Person im Moment am stärksten?<br><br>Hat sie selbst Ideen, was ihr helfen könnte, diese zu verringern? Hast du Ideen?<br><br>Zum Beispiel: <ul><li>der Person Raum geben Dampf ablassen, ihre Wut rauslassen</li><li>eine sichere und ruhige Atmosphäre schaffen in der jemand weinen zu können</li></ul>")
+                E232 -- dabei helfen, negative Gefühle zu verringern --> E2322("Welche Gefühle erlebt die Person im Moment am stärksten?<br><br>Hat sie selbst Ideen, was ihr helfen könnte, diese zu verringern? Hast du Ideen?<br><br>Zum Beispiel: <ul><li>der Person Raum geben Dampf ablassen, ihre Wut rauslassen</li><li>eine sichere und ruhige Atmosphäre schaffen in der jemand weinen kann</li></ul>")
         	
             E23 -- das Energieniveau verändern (ruhiger oder aktivierter werden) --> E231("Würde es der Person helfen, wenn sie etwas zur Ruhe kommen könnte? Oder würde es ihr eher helfen, wenn sie sich wacher und energiegeladener fühlen könnte?")
             E231 -- ruhiger werden --> E2311("Hat sie selbst Ideen, was ihr helfen könnte, diese zu verringern? Hast du Ideen?<br><br>Zum Beispiel:<ul><li>ruhige Musik anmachen</li><li>eine Entspannungsübung anleiten</li></ul>")
@@ -317,12 +319,12 @@ WAS_LEXIKON -- Ich kann dir Wertschätzung schenken. Ich kann dir sagen, was du 
         
 WAS_LEXIKON -- Wie wäre es mit etwas liebevollem Körperkontakt? Ich kann dir zum Beispiel eine Hand auf den Rücken legen oder dene Hand halten. Oder ich kann dich in den Arm nehmen, dich halten, sanft über deine Haut streichen, dich etwas massieren. --> B("<h3>Liebevoller Körperkontakt</h3>Was wäre hiervon gut für dich?")
 
-    B -- umarmt werden --> B1("B1")
+    B -- umarmt werden [Link fehlt] --> B1("B1")
     B -- tröstende Gesten --> B2("<ul><li>deine Hand halten, meine Hand auf deine Hand legen</li><li>meine Hand auf deinen Rücken oder deine Schulter legen</li><li>du könntest dich an meine Schulter lehnen</li></ul>)
-    B -- im Arm gehalten werden --> B2("B2")
-    B -- streicheln, kuscheln --> B3("<ul><li>sanft über deine Haut streichen</li><li>im Sitzen miteinander kuscheln</li><li>im Liegen miteinander kuscheln</li></ul>")
-    B -- massiert werden --> B4("<ul><li>den Kopf kraulen</li><li>Nacken und Schulter durchkneten</li><li>den Rücken massieren</li><li>Füße kneten</li></ul>")
-    B -- Intimität, Sexualität --> B5("B5")
+    B -- im Arm gehalten werden [Link fehlt] --> B3("B2")
+    B -- streicheln, kuscheln --> B4("<ul><li>sanft über deine Haut streichen</li><li>im Sitzen miteinander kuscheln</li><li>im Liegen miteinander kuscheln</li></ul>")
+    B -- massiert werden --> B5("<ul><li>den Kopf kraulen</li><li>Nacken und Schulter durchkneten</li><li>den Rücken massieren</li><li>Füße kneten</li></ul>")
+    B -- Intimität, Sexualität --> B6("B5")
 
 
 
